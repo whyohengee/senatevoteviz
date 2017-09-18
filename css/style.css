@@ -1,0 +1,120 @@
+body {
+  font-size: 16px;
+  font-family: "Lato", "Helvetica Neue", sans-serif; }
+
+.mainWrapper {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto; }
+
+h1.mainTitle {
+  font-family: "Ubuntu", "Helvetica Neue", sans-serif;
+  margin-bottom: 0; }
+
+.billSelection,
+.billDetails {
+  display: inline-block;
+  height: 200px; }
+
+.billSelection {
+  width: 40%;
+  margin-right: 10%;
+  float: left; }
+  .billSelection h2 {
+    margin-bottom: 0; }
+  .billSelection .billsList {
+    width: 100%;
+    padding-left: 0; }
+    .billSelection .billsList li button {
+      background-color: rgba(49, 48, 48, 0.8);
+      color: rgba(229, 227, 227, 0.9);
+      font-size: .8em;
+      padding: 10px;
+      width: 120px;
+      height: 50px;
+      border: 1px solid #313030; }
+  .billSelection .billsList li:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+  .billSelection #resetSeating {
+    background-color: rgba(49, 48, 48, 0.7);
+    width: 100%;
+    height: 40px;
+    margin-top: 20px; }
+
+.billDetails {
+  width: 50%;
+  visibility: hidden; }
+  .billDetails ul {
+    list-style: none;
+    display: inline-block; }
+    .billDetails ul li {
+      display: inline-block; }
+  .billDetails .billDescription {
+    height: 80px; }
+    .billDetails .billDescription h3 {
+      font-size: 16px;
+      font-weight: 900;
+      margin-bottom: 10px; }
+    .billDetails .billDescription p {
+      font-size: .875em;
+      margin: 0;
+      padding-left: 10px;
+      font-style: italic; }
+  .billDetails .billSource {
+    margin: 0;
+    padding-left: 10px; }
+    .billDetails .billSource a {
+      font-size: .75em;
+      margin: 0; }
+
+.voteResults ul {
+  display: flex;
+  justify-content: start;
+  padding-left: 0;
+  font-size: 15px;
+  margin-top: 10px; }
+  .voteResults ul li {
+    padding: 0 25px 0 10px; }
+  .voteResults ul li span {
+    padding-left: 10px;
+    font-size: 20px; }
+
+.svgSeating {
+  margin-left: 50%;
+  transform: translateX(-50%); }
+
+.senateSeatingContainer {
+  position: relative;
+  overflow-x: scroll; }
+
+.billsList {
+  list-style: none;
+  display: inline-block; }
+
+.tooltip {
+  position: absolute;
+  z-index: 10;
+  visibility: hidden;
+  background: rgba(59, 51, 51, 0.85);
+  color: #E7E7E7;
+  font-size: .7em;
+  left: 100px;
+  padding: 10px 15px;
+  text-align: left;
+  top: 100px;
+  width: 100px;
+  border-radius: 5px; }
+  .tooltip.visible {
+    visibility: visible; }
+  .tooltip .tooltip__close {
+    float: right;
+    position: absolute;
+    top: -8px;
+    right: 0;
+    font-size: 1.25em;
+    font-family: sans-serif;
+    padding: 0 10px 20px 0; }
+    .tooltip .tooltip__close:hover {
+      cursor: pointer; }

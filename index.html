@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width", initial-scale="1.0, minimum-scale=1.0" />
+		<title>Senate Vote Visualizer</title>
+		<!-- <link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/test.css" /> -->
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="mainWrapper">
+
+		<h1 class="mainTitle">Senate Vote Visualizer</h1>
+    
+
+
+		<section class="billSelection">
+      <h2>Issue: <span>Privacy/Surveillance</span></h2>
+			<ul class="billsList">
+				<li>
+					<button class="billsList__btn" id="patriotActBtn" value="Patriot Act">Patriot Act</button>
+					<button class="billsList__btn" id="cisaBtn">CISA</button>
+					<button class="billsList__btn" id="fisa2008Btn">FISA 2008 Amendment</button>
+				</li>
+        <li><button class="billsList__btn reset__btn" id="resetSeating">Reset Seating</button></li>
+			</ul>
+		</section>
+
+		<section class="billDetails">
+			<div class="billDescription">
+        <h3>Description:</h3>
+        <p></p>
+      </div>
+			<h4 class="billSource"><a href="" target="blank"></a></h4>
+      <div class="voteResults">
+        <ul>
+          <li>Yes: <span></span></li>
+          <li>No: <span></span></li>
+          <li>Not Voting: <span></span></li>
+        </ul>
+    </div>
+		</section>
+
+
+
+		<div class="senateSeatingContainer"></div>
+
+	</div><!-- .mainWrapper -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/d3.v3.4.8.min.js"></script>
+		<script type="text/javascript" src="js/seatingCoordinates.js"></script>
+		<script type="text/javascript" src="js/getResetSenators.js"></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+
+	</body>
+</html>
